@@ -1,7 +1,62 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
-<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalet Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
 
-<p1>Hello Dunia</p1>
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            font-size: 1.5em;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+            color: #444;
+        }
+
+        button {
+            padding: 1em 2em;
+            font-size: 1.2em;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Chalet Reservation System</h1>
+    </header>
+    
+    <main>
+        <p>
+            Explore our beautiful chalets and book your perfect getaway today! 
+            Whether you're looking for a peaceful retreat or an adventure-filled vacation, 
+            we have the perfect chalet for you.
+        </p>
+        
+        <button onclick="window.location.href='reservation.html'">Make a Reservation</button>
+    </main>
 </body>
 </html>
